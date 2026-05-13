@@ -1,0 +1,57 @@
+{
+  "id": "angus",
+  "name": "Angus",
+  "association": "American Angus Association",
+  "evaluationSystem": "EPD",
+  "geneticConditions": ["AM", "NH", "CA", "DD", "OH", "MH"],
+  "dataSourceUrl": "https://www.angus.org/tools-resources/national-cattle-evaluation",
+  "notes": "Angus marbling EPDs use the USDA scale (same as AWA-US). $C (Combined Value) is AAA's key all-purpose index for commercial producers retaining ownership through harvest.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",       "unit": "%",   "higherIsBetter": true,  "category": "calving",    "description": "Expected % unassisted births from the sire to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",              "unit": "lbs", "higherIsBetter": false, "category": "calving",    "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",            "unit": "lbs", "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",           "unit": "lbs", "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "RADG", "label": "Residual Avg Daily Gain",   "unit": "lb/d","higherIsBetter": true,  "category": "efficiency", "description": "Feedlot efficiency — gain above what is predicted from intake.", "evaluationSystem": "EPD" },
+    { "key": "DMI",  "label": "Dry Matter Intake",         "unit": "lb/d","higherIsBetter": false, "category": "efficiency", "description": "Feed intake difference. Lower at equal gain = better efficiency.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",             "unit": "lbs", "higherIsBetter": true,  "category": "maternal",   "description": "Daughter's milk contribution to calf WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",            "unit": "lbs", "higherIsBetter": true,  "category": "maternal",   "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CEM",  "label": "Calving Ease Maternal",     "unit": "%",   "higherIsBetter": true,  "category": "maternal",   "description": "% unassisted births from the sire's daughters.", "evaluationSystem": "EPD" },
+    { "key": "HP",   "label": "Heifer Pregnancy",          "unit": "%",   "higherIsBetter": true,  "category": "maternal",   "description": "Daughter pregnancy rate as yearling heifers.", "evaluationSystem": "EPD" },
+    { "key": "Doc",  "label": "Docility",                  "unit": "%",   "higherIsBetter": true,  "category": "maternal",   "description": "Disposition score from chute/pen scoring.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",            "unit": "lbs", "higherIsBetter": true,  "category": "carcass",    "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling (USDA)",           "unit": "score","higherIsBetter": true, "category": "carcass",    "description": "USDA marbling score.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",               "unit": "sq in","higherIsBetter": true, "category": "carcass",    "description": "Ribeye area at 12th rib.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",             "unit": "in",  "higherIsBetter": false, "category": "carcass",    "description": "12th rib backfat.", "evaluationSystem": "EPD" },
+    { "key": "SC",   "label": "Scrotal Circumference",     "unit": "cm",  "higherIsBetter": true,  "category": "maternal",   "description": "Fertility indicator.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 7, "BW": 2.5, "WW": 47, "YW": 83, "RADG": 0.05, "DMI": 0.10, "Milk": 22, "TM": 45,
+    "CEM": 6, "HP": 10, "Doc": 14, "CW": 52, "Marb": 0.42, "RE": 0.22, "Fat": 0.01, "SC": 0.5
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 2,    "p25": 5,    "p50": 7,    "p75": 10,   "p90": 13 },
+    "BW":   { "p10": 4.5,  "p25": 3.4,  "p50": 2.5,  "p75": 1.4,  "p90": 0.3 },
+    "WW":   { "p10": 30,   "p25": 38,   "p50": 47,   "p75": 56,   "p90": 65 },
+    "YW":   { "p10": 55,   "p25": 70,   "p50": 83,   "p75": 97,   "p90": 110 },
+    "RADG": { "p10": -0.05,"p25": 0.00, "p50": 0.05, "p75": 0.10, "p90": 0.16 },
+    "DMI":  { "p10": 0.35, "p25": 0.20, "p50": 0.10, "p75": 0.00, "p90": -0.12 },
+    "Milk": { "p10": 13,   "p25": 17,   "p50": 22,   "p75": 27,   "p90": 32 },
+    "TM":   { "p10": 28,   "p25": 36,   "p50": 45,   "p75": 54,   "p90": 63 },
+    "CEM":  { "p10": 1,    "p25": 4,    "p50": 6,    "p75": 9,    "p90": 12 },
+    "HP":   { "p10": 4,    "p25": 7,    "p50": 10,   "p75": 13,   "p90": 16 },
+    "Doc":  { "p10": 3,    "p25": 9,    "p50": 14,   "p75": 20,   "p90": 27 },
+    "CW":   { "p10": 28,   "p25": 40,   "p50": 52,   "p75": 66,   "p90": 80 },
+    "Marb": { "p10": 0.05, "p25": 0.22, "p50": 0.42, "p75": 0.65, "p90": 0.90 },
+    "RE":   { "p10": 0.02, "p25": 0.12, "p50": 0.22, "p75": 0.34, "p90": 0.48 },
+    "Fat":  { "p10": 0.04, "p25": 0.02, "p50": 0.01, "p75": -0.01,"p90": -0.03 },
+    "SC":   { "p10": -0.1, "p25": 0.2,  "p50": 0.5,  "p75": 0.9,  "p90": 1.3 }
+  },
+  "indexes": [
+    { "key": "$W", "label": "Weaned Calf Value",           "description": "Preweaning value from birth to weaning.", "unit": "USD" },
+    { "key": "$F", "label": "Feedlot Value",               "description": "Feedlot postweaning value.", "unit": "USD" },
+    { "key": "$G", "label": "Grid Value",                  "description": "Carcass grid value.", "unit": "USD" },
+    { "key": "$B", "label": "Beef Value",                  "description": "$F + $G — terminal beef value.", "unit": "USD" },
+    { "key": "$M", "label": "Maternal Weaned Calf",        "description": "Value in maternal weaned calf production.", "unit": "USD" },
+    { "key": "$C", "label": "Combined Value",              "description": "Combined all-purpose index for commercial producers retaining ownership through harvest.", "unit": "USD" }
+  ]
+}

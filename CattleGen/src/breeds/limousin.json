@@ -1,0 +1,43 @@
+{
+  "id": "limousin",
+  "name": "Limousin",
+  "association": "North American Limousin Foundation",
+  "evaluationSystem": "EPD",
+  "dataSourceUrl": "https://www.nalf.org",
+  "notes": "Highest muscling and red-meat yield of any breed. RE and YG are high priority. Marbling is the breed's weakness vs Angus/Wagyu.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct", "unit": "%",     "higherIsBetter": true,  "category": "calving",  "description": "% unassisted births to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",        "unit": "lbs",   "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",      "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",     "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",       "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "Daughter's milk contribution to WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",      "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",      "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling",            "unit": "score", "higherIsBetter": true,  "category": "carcass",  "description": "USDA marbling score. Limousin's weakest trait.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",         "unit": "sq in", "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye area. Limousin's strongest carcass trait.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",       "unit": "in",    "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat.", "evaluationSystem": "EPD" },
+    { "key": "YG",   "label": "Yield Grade",         "unit": "score", "higherIsBetter": false, "category": "carcass",  "description": "USDA yield grade. Lower = higher cutability. Limousin excels here.", "evaluationSystem": "EPD" },
+    { "key": "Doc",  "label": "Docility",            "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "Disposition score.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 8, "BW": 2.0, "WW": 44, "YW": 78, "Milk": 15, "TM": 37,
+    "CW": 48, "Marb": 0.10, "RE": 0.45, "Fat": 0.00, "YG": -0.12, "Doc": 12
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 3,    "p25": 6,    "p50": 8,    "p75": 11,   "p90": 15 },
+    "BW":   { "p10": 4.0,  "p25": 3.0,  "p50": 2.0,  "p75": 1.0,  "p90": 0.0 },
+    "WW":   { "p10": 26,   "p25": 34,   "p50": 44,   "p75": 54,   "p90": 62 },
+    "YW":   { "p10": 50,   "p25": 64,   "p50": 78,   "p75": 92,   "p90": 106 },
+    "Milk": { "p10": 6,    "p25": 10,   "p50": 15,   "p75": 20,   "p90": 25 },
+    "TM":   { "p10": 20,   "p25": 28,   "p50": 37,   "p75": 46,   "p90": 54 },
+    "CW":   { "p10": 24,   "p25": 36,   "p50": 48,   "p75": 62,   "p90": 76 },
+    "Marb": { "p10": -0.05,"p25": 0.02, "p50": 0.10, "p75": 0.22, "p90": 0.36 },
+    "RE":   { "p10": 0.20, "p25": 0.32, "p50": 0.45, "p75": 0.58, "p90": 0.72 },
+    "Fat":  { "p10": 0.03, "p25": 0.01, "p50": 0.00, "p75": -0.02,"p90": -0.04 },
+    "YG":   { "p10": 0.02, "p25": -0.05,"p50": -0.12,"p75": -0.20,"p90": -0.28 },
+    "Doc":  { "p10": 2,    "p25": 7,    "p50": 12,   "p75": 18,   "p90": 24 }
+  },
+  "indexes": [
+    { "key": "$MTI","label": "Mainstream Terminal Index", "description": "Terminal progeny carcass value.", "unit": "USD" }
+  ]
+}

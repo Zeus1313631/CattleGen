@@ -1,0 +1,34 @@
+{
+  "association": "AAA",
+  "evaluationSystem": "EPD",
+  "lastUpdated": "2025-01-01",
+  "records": [
+    {
+      "registrationNumber": "AAA-SAMPLE-0001",
+      "name": "SAMPLE ANGUS SIRE",
+      "breedId": "angus",
+      "association": "American Angus Association",
+      "dataSource": "AAA",
+      "birthYear": 2019,
+      "lastUpdated": "2025-01-01",
+      "epds": {
+        "CED": 11,
+        "BW": 0.8,
+        "WW": 62,
+        "YW": 110,
+        "RADG": 0.12,
+        "DMI": -0.05,
+        "Milk": 26,
+        "TM": 57,
+        "CEM": 9,
+        "HP": 12,
+        "Doc": 22,
+        "CW": 68,
+        "Marb": 0.85,
+        "RE": 0.40,
+        "Fat": -0.01,
+        "SC": 0.9
+      }
+    }
+  ]
+}

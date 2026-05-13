@@ -1,0 +1,52 @@
+{
+  "id": "hereford",
+  "name": "Hereford",
+  "association": "American Hereford Association",
+  "evaluationSystem": "EPD",
+  "geneticConditions": ["IE", "HY", "DL", "MSUD"],
+  "dataSourceUrl": "https://www.hereford.org",
+  "notes": "Hereford generally shows lower marbling than Angus but strong maternal traits and docility. MW (Mature Cow Weight) EPD — lower is more favorable for feed efficiency.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",   "unit": "%",     "higherIsBetter": true,  "category": "calving",  "description": "% unassisted births to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",          "unit": "lbs",   "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",         "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "Daughter's milk contribution to calf WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",        "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CEM",  "label": "Calving Ease Maternal", "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "% unassisted births from the sire's daughters.", "evaluationSystem": "EPD" },
+    { "key": "HP",   "label": "Heifer Pregnancy",      "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "Daughter pregnancy rate as yearling heifers.", "evaluationSystem": "EPD" },
+    { "key": "SC",   "label": "Scrotal Circumference", "unit": "cm",    "higherIsBetter": true,  "category": "maternal", "description": "Fertility indicator.", "evaluationSystem": "EPD" },
+    { "key": "Doc",  "label": "Docility",              "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "Disposition score; Hereford are known for calm temperament.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling",              "unit": "score", "higherIsBetter": true,  "category": "carcass",  "description": "USDA marbling score.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",           "unit": "sq in", "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye area at 12th rib.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",         "unit": "in",    "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat.", "evaluationSystem": "EPD" },
+    { "key": "MW",   "label": "Mature Cow Weight",     "unit": "lbs",   "higherIsBetter": false, "category": "maternal", "description": "Daughter mature weight. Lower = better feed efficiency.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 5, "BW": 3.8, "WW": 42, "YW": 72, "Milk": 18, "TM": 39,
+    "CEM": 5, "HP": 9, "SC": 0.4, "Doc": 16, "CW": 48, "Marb": 0.20, "RE": 0.18, "Fat": 0.02, "MW": 25
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 0,    "p25": 2,    "p50": 5,    "p75": 8,    "p90": 11 },
+    "BW":   { "p10": 6.0,  "p25": 4.8,  "p50": 3.8,  "p75": 2.6,  "p90": 1.4 },
+    "WW":   { "p10": 26,   "p25": 34,   "p50": 42,   "p75": 51,   "p90": 60 },
+    "YW":   { "p10": 44,   "p25": 58,   "p50": 72,   "p75": 85,   "p90": 98 },
+    "Milk": { "p10": 9,    "p25": 13,   "p50": 18,   "p75": 23,   "p90": 28 },
+    "TM":   { "p10": 22,   "p25": 30,   "p50": 39,   "p75": 48,   "p90": 56 },
+    "CEM":  { "p10": 0,    "p25": 2,    "p50": 5,    "p75": 8,    "p90": 11 },
+    "HP":   { "p10": 3,    "p25": 6,    "p50": 9,    "p75": 12,   "p90": 15 },
+    "SC":   { "p10": -0.2, "p25": 0.1,  "p50": 0.4,  "p75": 0.8,  "p90": 1.2 },
+    "Doc":  { "p10": 4,    "p25": 10,   "p50": 16,   "p75": 23,   "p90": 30 },
+    "CW":   { "p10": 24,   "p25": 36,   "p50": 48,   "p75": 62,   "p90": 76 },
+    "Marb": { "p10": -0.02,"p25": 0.08, "p50": 0.20, "p75": 0.34, "p90": 0.52 },
+    "RE":   { "p10": 0.00, "p25": 0.08, "p50": 0.18, "p75": 0.30, "p90": 0.44 },
+    "Fat":  { "p10": 0.06, "p25": 0.04, "p50": 0.02, "p75": 0.00, "p90": -0.02 },
+    "MW":   { "p10": 55,   "p25": 40,   "p50": 25,   "p75": 10,   "p90": -5 }
+  },
+  "indexes": [
+    { "key": "$M", "label": "Maternal Index",          "description": "Balanced maternal performance index.", "unit": "USD" },
+    { "key": "$B", "label": "Beef / Terminal Index",   "description": "Terminal beef value.", "unit": "USD" },
+    { "key": "$C", "label": "Combined Index",          "description": "Combined all-purpose producer index.", "unit": "USD" }
+  ]
+}

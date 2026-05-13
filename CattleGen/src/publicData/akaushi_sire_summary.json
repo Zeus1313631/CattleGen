@@ -1,0 +1,29 @@
+{
+  "association": "Akaushi",
+  "evaluationSystem": "EPD",
+  "lastUpdated": "2025-01-01",
+  "records": [
+    {
+      "registrationNumber": "AA-SAMPLE-0001",
+      "name": "SAMPLE AKAUSHI SIRE",
+      "breedId": "wagyu_red_akaushi",
+      "wagyuSubtype": "wagyu_red_akaushi_fullblood",
+      "association": "American Akaushi Association",
+      "dataSource": "Akaushi",
+      "birthYear": 2019,
+      "lastUpdated": "2025-01-01",
+      "epds": {
+        "CED": 9,
+        "BW": 1.4,
+        "WW": 42,
+        "YW": 72,
+        "Milk": 18,
+        "TM": 39,
+        "CW": 42,
+        "Marb": 0.48,
+        "RE": 0.32,
+        "Fat": -0.01
+      }
+    }
+  ]
+}

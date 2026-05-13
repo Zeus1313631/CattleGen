@@ -1,0 +1,33 @@
+{
+  "association": "AHA",
+  "evaluationSystem": "EPD",
+  "lastUpdated": "2025-01-01",
+  "records": [
+    {
+      "registrationNumber": "AHA-SAMPLE-0001",
+      "name": "SAMPLE HEREFORD SIRE",
+      "breedId": "hereford",
+      "association": "American Hereford Association",
+      "dataSource": "AHA",
+      "birthYear": 2020,
+      "lastUpdated": "2025-01-01",
+      "epds": {
+        "CED": 8,
+        "BW": 2.2,
+        "WW": 55,
+        "YW": 92,
+        "Milk": 22,
+        "TM": 50,
+        "CEM": 7,
+        "HP": 11,
+        "SC": 0.9,
+        "Doc": 24,
+        "CW": 62,
+        "Marb": 0.35,
+        "RE": 0.28,
+        "Fat": 0.00,
+        "MW": 10
+      }
+    }
+  ]
+}

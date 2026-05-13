@@ -1,0 +1,36 @@
+{
+  "association": "AWA",
+  "evaluationSystem": "EPD",
+  "lastUpdated": "2025-01-01",
+  "records": [
+    {
+      "registrationNumber": "FB00000001",
+      "name": "SAMPLE AWA FULLBLOOD SIRE",
+      "breedId": "wagyu_black_awa",
+      "wagyuSubtype": "wagyu_black_fullblood_awa",
+      "association": "American Wagyu Association",
+      "dataSource": "AWA",
+      "birthYear": 2018,
+      "lastUpdated": "2025-01-01",
+      "epds": {
+        "CED": 8,
+        "BW": 1.8,
+        "WW": 34,
+        "YW": 58,
+        "Milk": 12,
+        "TM": 29,
+        "CW": 48,
+        "Marb": 0.82,
+        "RE": 0.28,
+        "Fat": 0.00,
+        "IMF": 2.9,
+        "YG": -0.08
+      },
+      "accuracy": {
+        "Marb": 0.78,
+        "CW": 0.72,
+        "BW": 0.85
+      }
+    }
+  ]
+}

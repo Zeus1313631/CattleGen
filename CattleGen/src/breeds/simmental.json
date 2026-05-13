@@ -1,0 +1,46 @@
+{
+  "id": "simmental",
+  "name": "Simmental",
+  "association": "American Simmental Association",
+  "evaluationSystem": "EPD",
+  "dataSourceUrl": "https://www.simmental.org",
+  "notes": "Known for strong growth and good ribeye area. Frequently crossed with Angus (SimAngus).",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",   "unit": "%",     "higherIsBetter": true,  "category": "calving",  "description": "% unassisted births to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",          "unit": "lbs",   "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",         "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "Daughter's milk contribution to calf WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",        "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CEM",  "label": "Calving Ease Maternal", "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "% unassisted births from the sire's daughters.", "evaluationSystem": "EPD" },
+    { "key": "HP",   "label": "Heifer Pregnancy",      "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "Daughter pregnancy rate.", "evaluationSystem": "EPD" },
+    { "key": "Doc",  "label": "Docility",              "unit": "%",     "higherIsBetter": true,  "category": "maternal", "description": "Disposition score.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling",              "unit": "score", "higherIsBetter": true,  "category": "carcass",  "description": "USDA marbling score.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",           "unit": "sq in", "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye area at 12th rib.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",         "unit": "in",    "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 11, "BW": 3.0, "WW": 55, "YW": 95, "Milk": 22, "TM": 50,
+    "CEM": 8, "HP": 11, "Doc": 15, "CW": 60, "Marb": 0.28, "RE": 0.28, "Fat": 0.01
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 5,    "p25": 8,    "p50": 11,   "p75": 15,   "p90": 19 },
+    "BW":   { "p10": 5.0,  "p25": 3.9,  "p50": 3.0,  "p75": 1.8,  "p90": 0.7 },
+    "WW":   { "p10": 34,   "p25": 44,   "p50": 55,   "p75": 66,   "p90": 77 },
+    "YW":   { "p10": 62,   "p25": 78,   "p50": 95,   "p75": 112,  "p90": 128 },
+    "Milk": { "p10": 12,   "p25": 17,   "p50": 22,   "p75": 27,   "p90": 32 },
+    "TM":   { "p10": 30,   "p25": 40,   "p50": 50,   "p75": 60,   "p90": 70 },
+    "CEM":  { "p10": 3,    "p25": 5,    "p50": 8,    "p75": 11,   "p90": 14 },
+    "HP":   { "p10": 5,    "p25": 8,    "p50": 11,   "p75": 14,   "p90": 17 },
+    "Doc":  { "p10": 4,    "p25": 9,    "p50": 15,   "p75": 22,   "p90": 29 },
+    "CW":   { "p10": 34,   "p25": 46,   "p50": 60,   "p75": 74,   "p90": 88 },
+    "Marb": { "p10": 0.00, "p25": 0.13, "p50": 0.28, "p75": 0.45, "p90": 0.64 },
+    "RE":   { "p10": 0.08, "p25": 0.18, "p50": 0.28, "p75": 0.40, "p90": 0.54 },
+    "Fat":  { "p10": 0.04, "p25": 0.02, "p50": 0.01, "p75": -0.01,"p90": -0.03 }
+  },
+  "indexes": [
+    { "key": "API", "label": "All Purpose Index", "description": "ASA's primary maternal/terminal combined index.", "unit": "USD" },
+    { "key": "TI",  "label": "Terminal Index",     "description": "Terminal progeny to harvest index.", "unit": "USD" }
+  ]
+}
