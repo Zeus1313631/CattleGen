@@ -1,0 +1,50 @@
+{
+  "id": "red_angus",
+  "name": "Red Angus",
+  "association": "Red Angus Association of America",
+  "evaluationSystem": "EPD",
+  "dataSourceUrl": "https://www.redangus.org",
+  "notes": "Known for good maternal traits and temperament. ME (Maintenance Energy) EPD is unique industry-wide: a bull +10 ME vs +0 has daughters needing ~11 more lbs of forage/month.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",   "unit": "%",       "higherIsBetter": true,  "category": "calving",  "description": "% unassisted births to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",          "unit": "lbs",     "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",        "unit": "lbs",     "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",       "unit": "lbs",     "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",         "unit": "lbs",     "higherIsBetter": true,  "category": "maternal", "description": "Daughter's milk contribution to WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",        "unit": "lbs",     "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CEM",  "label": "Calving Ease Maternal", "unit": "%",       "higherIsBetter": true,  "category": "maternal", "description": "% unassisted births from the sire's daughters.", "evaluationSystem": "EPD" },
+    { "key": "HP",   "label": "Heifer Pregnancy",      "unit": "%",       "higherIsBetter": true,  "category": "maternal", "description": "Daughter pregnancy rate.", "evaluationSystem": "EPD" },
+    { "key": "ME",   "label": "Maintenance Energy",    "unit": "Mcal/mo", "higherIsBetter": false, "category": "efficiency","description": "UNIQUE to Red Angus. Daughter maintenance-energy requirement. +10 ME ≈ +11 lbs forage/month over +0.", "evaluationSystem": "EPD", "isBreedUnique": true },
+    { "key": "Doc",  "label": "Docility",              "unit": "%",       "higherIsBetter": true,  "category": "maternal", "description": "Disposition score.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",        "unit": "lbs",     "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling",              "unit": "score",   "higherIsBetter": true,  "category": "carcass",  "description": "USDA marbling score.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",           "unit": "sq in",   "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye area at 12th rib.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",         "unit": "in",      "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 7, "BW": 1.8, "WW": 44, "YW": 76, "Milk": 20, "TM": 42,
+    "CEM": 6, "HP": 10, "ME": 0, "Doc": 13, "CW": 48, "Marb": 0.38, "RE": 0.20, "Fat": 0.01
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 2,    "p25": 5,    "p50": 7,    "p75": 10,   "p90": 14 },
+    "BW":   { "p10": 3.8,  "p25": 2.8,  "p50": 1.8,  "p75": 0.8,  "p90": -0.2 },
+    "WW":   { "p10": 26,   "p25": 34,   "p50": 44,   "p75": 54,   "p90": 62 },
+    "YW":   { "p10": 48,   "p25": 62,   "p50": 76,   "p75": 90,   "p90": 104 },
+    "Milk": { "p10": 10,   "p25": 15,   "p50": 20,   "p75": 25,   "p90": 30 },
+    "TM":   { "p10": 25,   "p25": 33,   "p50": 42,   "p75": 51,   "p90": 60 },
+    "CEM":  { "p10": 1,    "p25": 4,    "p50": 6,    "p75": 9,    "p90": 12 },
+    "HP":   { "p10": 4,    "p25": 7,    "p50": 10,   "p75": 13,   "p90": 16 },
+    "ME":   { "p10": 15,   "p25": 8,    "p50": 0,    "p75": -8,   "p90": -16 },
+    "Doc":  { "p10": 3,    "p25": 8,    "p50": 13,   "p75": 19,   "p90": 26 },
+    "CW":   { "p10": 24,   "p25": 36,   "p50": 48,   "p75": 62,   "p90": 76 },
+    "Marb": { "p10": 0.05, "p25": 0.20, "p50": 0.38, "p75": 0.58, "p90": 0.80 },
+    "RE":   { "p10": 0.02, "p25": 0.10, "p50": 0.20, "p75": 0.32, "p90": 0.46 },
+    "Fat":  { "p10": 0.05, "p25": 0.03, "p50": 0.01, "p75": -0.01,"p90": -0.03 }
+  },
+  "indexes": [
+    { "key": "$W", "label": "Weaned Calf Value", "description": "Preweaning value.", "unit": "USD" },
+    { "key": "$F", "label": "Feedlot Value",     "description": "Feedlot postweaning value.", "unit": "USD" },
+    { "key": "$B", "label": "Beef Value",        "description": "$F + carcass grid — terminal beef value.", "unit": "USD" },
+    { "key": "$C", "label": "Combined Value",    "description": "All-purpose combined producer index.", "unit": "USD" }
+  ]
+}

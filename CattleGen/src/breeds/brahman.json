@@ -1,0 +1,40 @@
+{
+  "id": "brahman",
+  "name": "Brahman",
+  "association": "American Brahman Breeders Association",
+  "evaluationSystem": "EPD",
+  "marblingScaleMultiplier": 100,
+  "dataSourceUrl": "https://www.brahman.org",
+  "notes": "CRITICAL: Brahman marbling EPDs are reported on a scale 100× larger than other breeds (400 = Slight00, 500 = Small00). The engine must divide Brahman Marb by 100 before comparing to or averaging with other breeds. Foundation of southern US and tropical crossbreeding — heat tolerance, tick resistance, and strong hybrid vigor.",
+  "traits": [
+    { "key": "BW",   "label": "Birth Weight",          "unit": "lbs",   "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",         "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "Daughter's milk contribution to WW.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",        "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "SC",   "label": "Scrotal Circumference", "unit": "cm",    "higherIsBetter": true,  "category": "maternal", "description": "Fertility indicator.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "Marb", "label": "Marbling (Brahman scale ×100)", "unit": "score", "higherIsBetter": true, "category": "carcass", "description": "BRAHMAN SCALE — 100× larger than other breeds. 400 = Slight00, 500 = Small00. Always divide by 100 before cross-breed comparison.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",           "unit": "sq in", "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye area at 12th rib.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "Fat Thickness",         "unit": "in",    "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "BW": 4.5, "WW": 38, "YW": 62, "Milk": 8, "TM": 27, "SC": 0.6,
+    "CW": 30, "Marb": 420, "RE": 0.20, "Fat": 0.04
+  },
+  "percentileRanges": {
+    "BW":   { "p10": 6.5,  "p25": 5.5,  "p50": 4.5,  "p75": 3.3,  "p90": 2.2 },
+    "WW":   { "p10": 22,   "p25": 30,   "p50": 38,   "p75": 46,   "p90": 54 },
+    "YW":   { "p10": 38,   "p25": 50,   "p50": 62,   "p75": 74,   "p90": 86 },
+    "Milk": { "p10": 2,    "p25": 5,    "p50": 8,    "p75": 11,   "p90": 14 },
+    "TM":   { "p10": 13,   "p25": 20,   "p50": 27,   "p75": 34,   "p90": 41 },
+    "SC":   { "p10": 0.0,  "p25": 0.3,  "p50": 0.6,  "p75": 0.9,  "p90": 1.2 },
+    "CW":   { "p10": 8,    "p25": 18,   "p50": 30,   "p75": 42,   "p90": 55 },
+    "Marb": { "p10": 340,  "p25": 380,  "p50": 420,  "p75": 465,  "p90": 510 },
+    "RE":   { "p10": 0.02, "p25": 0.10, "p50": 0.20, "p75": 0.32, "p90": 0.46 },
+    "Fat":  { "p10": 0.08, "p25": 0.06, "p50": 0.04, "p75": 0.02, "p90": 0.00 }
+  },
+  "indexes": [
+    { "key": "BMI", "label": "Brahman Maternal Index", "description": "Balanced maternal/growth index for Brahman herds.", "unit": "USD" }
+  ]
+}

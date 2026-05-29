@@ -1,0 +1,31 @@
+{
+  "association": "BBU",
+  "evaluationSystem": "EPD",
+  "lastUpdated": "2025-09-01",
+  "records": [
+    {
+      "registrationNumber": "BBU-SAMPLE-0001",
+      "name": "SAMPLE BEEFMASTER SIRE",
+      "breedId": "beefmaster",
+      "association": "Beefmaster Breeders United",
+      "dataSource": "BBU",
+      "birthYear": 2020,
+      "lastUpdated": "2025-09-01",
+      "epds": {
+        "CED": 8,
+        "BW": 1.8,
+        "WW": 52,
+        "YW": 86,
+        "Milk": 16,
+        "TM": 42,
+        "CEM": 7,
+        "SC": 0.7,
+        "CW": 55,
+        "RE": 0.28,
+        "Fat": 0.01,
+        "IMF": 1.2,
+        "Doc": 18
+      }
+    }
+  ]
+}

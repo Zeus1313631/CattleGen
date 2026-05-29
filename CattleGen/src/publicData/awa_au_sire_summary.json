@@ -1,0 +1,41 @@
+{
+  "association": "AWA-AU",
+  "evaluationSystem": "WBV",
+  "lastUpdated": "2026-02-15",
+  "records": [
+    {
+      "registrationNumber": "AU-FB-000001",
+      "name": "SAMPLE AWA-AU FULLBLOOD SIRE",
+      "breedId": "wagyu_au",
+      "wagyuSubtype": "wagyu_au_fullblood",
+      "association": "Australian Wagyu Association",
+      "dataSource": "AWA-AU",
+      "birthYear": 2019,
+      "lastUpdated": "2026-02-15",
+      "epds": {
+        "BWT": 1.2,
+        "W200": 18,
+        "W400": 32,
+        "W600": 42,
+        "MCW": 8,
+        "Milk": 6,
+        "SC": 0.8,
+        "CWT": 22,
+        "EMA": 3.1,
+        "MS": 0.95,
+        "MFI": 0.52,
+        "P8Fat": 0.5,
+        "NFI": -0.15
+      },
+      "prefecturalComposition": {
+        "tajima": 62.5,
+        "kedaka": 18.0,
+        "shimane": 12.5,
+        "itozakura": 4.0,
+        "tottori": 2.0,
+        "okayama": 0.5,
+        "hiroshima": 0.5
+      }
+    }
+  ]
+}

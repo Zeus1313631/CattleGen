@@ -1,0 +1,43 @@
+{
+  "id": "wagyu_red_akaushi",
+  "name": "Japanese Red / Akaushi",
+  "association": "American Akaushi Association",
+  "evaluationSystem": "EPD",
+  "wagyuSubtype": "wagyu_red_akaushi_fullblood",
+  "prefecturalTracking": false,
+  "geneticConditions": ["F11", "IARS"],
+  "dataSourceUrl": "https://www.akaushi.com",
+  "notes": "IMPORTANT: Akaushi (Japanese Red) is a SEPARATE BREED from Japanese Black Wagyu — not a color variant. Crossing Japanese Black with Akaushi produces an F1 cross, not a Fullblood of either breed. Known for leaner marbling profile, strong maternal traits, and heat tolerance.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct", "unit": "%",     "higherIsBetter": true,  "category": "calving",  "description": "% unassisted births to first-calf heifers.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "BW",   "label": "Birth Weight",        "unit": "lbs",   "higherIsBetter": false, "category": "calving",  "description": "Progeny birth-weight difference.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "WW",   "label": "Weaning Weight",      "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "YW",   "label": "Yearling Weight",     "unit": "lbs",   "higherIsBetter": true,  "category": "growth",   "description": "Progeny weight at ~365 days.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Milk", "label": "Maternal Milk",       "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "Weaning weight contribution from daughter's milk.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "TM",   "label": "Total Maternal",      "unit": "lbs",   "higherIsBetter": true,  "category": "maternal", "description": "(WW/2) + Milk.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "CW",   "label": "Carcass Weight",      "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",  "description": "Hot carcass weight.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Marb", "label": "Marbling",            "unit": "score", "higherIsBetter": true,  "category": "carcass",  "description": "USDA marbling score. Akaushi marbling is lower than Japanese Black but high vs continental breeds.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "RE",   "label": "Ribeye Area",         "unit": "sq in", "higherIsBetter": true,  "category": "carcass",  "description": "Ribeye cross-section area.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Fat",  "label": "Fat Thickness",       "unit": "in",    "higherIsBetter": false, "category": "carcass",  "description": "12th rib backfat depth.", "evaluationSystem": "EPD", "isWagyuSpecific": true }
+  ],
+  "breedAverages": {
+    "CED": 5, "BW": 2.8, "WW": 32, "YW": 55, "Milk": 14, "TM": 30,
+    "CW": 30, "Marb": 0.25, "RE": 0.20, "Fat": 0.01
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 1,    "p25": 3,    "p50": 5,    "p75": 8,    "p90": 12 },
+    "BW":   { "p10": 5.2,  "p25": 3.8,  "p50": 2.8,  "p75": 1.5,  "p90": 0.4 },
+    "WW":   { "p10": 18,   "p25": 25,   "p50": 32,   "p75": 40,   "p90": 48 },
+    "YW":   { "p10": 32,   "p25": 43,   "p50": 55,   "p75": 68,   "p90": 80 },
+    "Milk": { "p10": 5,    "p25": 10,   "p50": 14,   "p75": 19,   "p90": 24 },
+    "TM":   { "p10": 16,   "p25": 23,   "p50": 30,   "p75": 38,   "p90": 46 },
+    "CW":   { "p10": 8,    "p25": 18,   "p50": 30,   "p75": 42,   "p90": 55 },
+    "Marb": { "p10": 0.00, "p25": 0.12, "p50": 0.25, "p75": 0.42, "p90": 0.62 },
+    "RE":   { "p10": 0.02, "p25": 0.11, "p50": 0.20, "p75": 0.32, "p90": 0.44 },
+    "Fat":  { "p10": 0.05, "p25": 0.03, "p50": 0.01, "p75": -0.01,"p90": -0.02 }
+  },
+  "indexes": [
+    { "key": "GI", "label": "Growth Index",  "description": "Growth and maternal performance balanced index.", "unit": "USD" },
+    { "key": "CI", "label": "Carcass Index", "description": "Terminal carcass value index.", "unit": "USD" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "beefmaster",
+  "name": "Beefmaster",
+  "association": "Beefmaster Breeders United",
+  "evaluationSystem": "EPD",
+  "dataSourceUrl": "https://beefmaster.digitalbeef.com",
+  "sixEssentials": ["Disposition", "Fertility", "Weight", "Conformation", "Hardiness", "Milk Production"],
+  "notes": "Composite breed developed in the 1930s by Tom Lasater (Hereford × Shorthorn × Brahman). First composite breed registered in the US. Carries ~25% Brahman influence, giving heat tolerance, tick resistance, and hybrid vigor in crossbreeding — especially in the Gulf Coast, Southwest US, and tropical/subtropical regions. BBU moved to MONTHLY evaluations in 2024 via the DigitalBeef platform. GE-EPDs require the 100K Neogen SNP panel (only option as of September 2025). Ultrasound and yearling weight window: 320-450 days (updated Sept 2024). UGC Certified technician required for ultrasound. Reports IMF% (ultrasound), NOT a marbling-score EPD — do NOT apply the Brahman 100x marbling scale multiplier.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",   "unit": "%",     "higherIsBetter": true,  "category": "calving",    "description": "% unassisted births from the sire to first-calf heifers.", "evaluationSystem": "EPD" },
+    { "key": "BW",   "label": "Birth Weight",          "unit": "lbs",   "higherIsBetter": false, "category": "calving",    "description": "Progeny birth-weight difference. Lower favored for heifer bulls.", "evaluationSystem": "EPD" },
+    { "key": "WW",   "label": "Weaning Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at ~205 days.", "evaluationSystem": "EPD" },
+    { "key": "YW",   "label": "Yearling Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at ~365 days. Scan window 320-450 days.", "evaluationSystem": "EPD" },
+    { "key": "Milk", "label": "Maternal Milk",         "unit": "lbs",   "higherIsBetter": true,  "category": "maternal",   "description": "Mothering ability in daughters — central to Beefmaster's 'Milk Production' essential.", "evaluationSystem": "EPD" },
+    { "key": "TM",   "label": "Total Maternal",        "unit": "lbs",   "higherIsBetter": true,  "category": "maternal",   "description": "(WW/2) + Milk.", "evaluationSystem": "EPD" },
+    { "key": "CEM",  "label": "Calving Ease Maternal", "unit": "%",     "higherIsBetter": true,  "category": "maternal",   "description": "% unassisted births from the sire's daughters.", "evaluationSystem": "EPD" },
+    { "key": "SC",   "label": "Scrotal Circumference", "unit": "cm",    "higherIsBetter": true,  "category": "maternal",   "description": "Fertility indicator; correlates with daughter age at puberty. Central to Beefmaster's 'Fertility' essential.", "evaluationSystem": "EPD" },
+    { "key": "CW",   "label": "Carcass Weight",        "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",    "description": "Hot carcass weight.", "evaluationSystem": "EPD" },
+    { "key": "RE",   "label": "Ribeye Area",           "unit": "sq in", "higherIsBetter": true,  "category": "carcass",    "description": "12th rib ultrasound ribeye area.", "evaluationSystem": "EPD" },
+    { "key": "Fat",  "label": "12th Rib Fat",          "unit": "in",    "higherIsBetter": false, "category": "carcass",    "description": "Ultrasound backfat depth.", "evaluationSystem": "EPD" },
+    { "key": "IMF",  "label": "Intramuscular Fat %",   "unit": "%",     "higherIsBetter": true,  "category": "carcass",    "description": "Ultrasound IMF% — reported in tenths of a percent difference. Beefmaster does NOT publish a marbling-score EPD.", "evaluationSystem": "EPD" },
+    { "key": "Doc",  "label": "Docility / Disposition","unit": "score", "higherIsBetter": true,  "category": "maternal",   "description": "Disposition score — tied to Beefmaster's 'Disposition' essential. Higher = more docile.", "evaluationSystem": "EPD" }
+  ],
+  "breedAverages": {
+    "CED": 5, "BW": 3.5, "WW": 40, "YW": 68, "Milk": 12, "TM": 32,
+    "CEM": 4, "SC": 0.3, "CW": 40, "RE": 0.18, "Fat": 0.03, "IMF": 0.8, "Doc": 10
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 0,    "p25": 2,    "p50": 5,    "p75": 8,    "p90": 11 },
+    "BW":   { "p10": 5.8,  "p25": 4.6,  "p50": 3.5,  "p75": 2.3,  "p90": 1.1 },
+    "WW":   { "p10": 22,   "p25": 30,   "p50": 40,   "p75": 50,   "p90": 60 },
+    "YW":   { "p10": 40,   "p25": 54,   "p50": 68,   "p75": 82,   "p90": 96 },
+    "Milk": { "p10": 4,    "p25": 8,    "p50": 12,   "p75": 16,   "p90": 20 },
+    "TM":   { "p10": 16,   "p25": 24,   "p50": 32,   "p75": 40,   "p90": 48 },
+    "CEM":  { "p10": 0,    "p25": 2,    "p50": 4,    "p75": 7,    "p90": 10 },
+    "SC":   { "p10": -0.3, "p25": 0.0,  "p50": 0.3,  "p75": 0.7,  "p90": 1.0 },
+    "CW":   { "p10": 18,   "p25": 28,   "p50": 40,   "p75": 52,   "p90": 65 },
+    "RE":   { "p10": 0.02, "p25": 0.10, "p50": 0.18, "p75": 0.28, "p90": 0.40 },
+    "Fat":  { "p10": 0.06, "p25": 0.04, "p50": 0.03, "p75": 0.01, "p90": 0.00 },
+    "IMF":  { "p10": 0.2,  "p25": 0.5,  "p50": 0.8,  "p75": 1.2,  "p90": 1.6 },
+    "Doc":  { "p10": 2,    "p25": 6,    "p50": 10,   "p75": 15,   "p90": 20 }
+  },
+  "indexes": [
+    { "key": "$T", "label": "Terminal Index", "description": "For producers NOT keeping replacement females. Focuses purely on growth and carcass — no maternal traits weighted.", "unit": "USD" },
+    { "key": "$M", "label": "Maternal Index", "description": "For producers keeping replacement females. Predicts replacement female performance while maximizing pounds on steer mates.", "unit": "USD" }
+  ]
+}

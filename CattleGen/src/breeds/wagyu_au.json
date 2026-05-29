@@ -1,0 +1,60 @@
+{
+  "id": "wagyu_au",
+  "name": "Australian Wagyu (AWA-AU)",
+  "association": "Australian Wagyu Association",
+  "evaluationSystem": "WBV",
+  "wagyuSubtype": "wagyu_au_fullblood",
+  "prefecturalTracking": true,
+  "geneticConditions": ["F11", "IARS", "B3", "CHS", "CL16", "F13"],
+  "dataSourceUrl": "https://www.wagyu.org.au/a-new-genetic-framework-for-wagyu",
+  "notes": "AWA-AU transitioned from BREEDPLAN EBVs to Wagyu Breeding Values (WBVs) in February 2026. Retail Beef Yield (RBY) was discontinued. Net Feed Intake (NFI) and Marble Fineness (MFI) are Wagyu-specific traits. Uses the AUS-MEAT marble score scale (0-9+), NOT USDA marbling.",
+  "traits": [
+    { "key": "BWT",   "label": "Birth Weight",             "unit": "kg",      "higherIsBetter": false, "category": "calving",    "description": "Progeny birth weight WBV. Lower is favored for heifer bulls.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "W200",  "label": "200-Day Weight",           "unit": "kg",      "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at 200 days.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "W400",  "label": "400-Day Weight",           "unit": "kg",      "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at 400 days.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "W600",  "label": "600-Day Weight",           "unit": "kg",      "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight at 600 days.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "MCW",   "label": "Mature Cow Weight",        "unit": "kg",      "higherIsBetter": false, "category": "maternal",   "description": "Mature daughter weight. Lower favors feed efficiency.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "Milk",  "label": "Milk",                     "unit": "kg",      "higherIsBetter": true,  "category": "maternal",   "description": "Daughter's milk contribution to calf 200-day weight.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "SC",    "label": "Scrotal Circumference",    "unit": "cm",      "higherIsBetter": true,  "category": "maternal",   "description": "Fertility indicator; correlates with daughter age at puberty.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "CWT",   "label": "Carcase Weight",           "unit": "kg",      "higherIsBetter": true,  "category": "carcass",    "description": "Hot carcase weight at harvest.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "EMA",   "label": "Eye Muscle Area",          "unit": "cm²",     "higherIsBetter": true,  "category": "carcass",    "description": "Ribeye cross-section area.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "MS",    "label": "Marble Score (AUS-MEAT)",  "unit": "score",   "higherIsBetter": true,  "category": "carcass",    "description": "AUS-MEAT marble score 0-9+. NOT the USDA scale.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "MFI",   "label": "Marble Fineness",          "unit": "index",   "higherIsBetter": true,  "category": "carcass",    "description": "Wagyu-unique trait measuring the texture/fineness of marbling fat — separate from marble score.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "P8Fat", "label": "Rump Fat (P8)",            "unit": "mm",      "higherIsBetter": false, "category": "carcass",    "description": "P8 rump fat depth. Trim-related — lower is favored.", "evaluationSystem": "WBV", "isWagyuSpecific": true },
+    { "key": "NFI",   "label": "Net Feed Intake",          "unit": "kg/day",  "higherIsBetter": false, "category": "efficiency", "description": "Feed efficiency in long-fed systems. New in 2026. Lower = better.", "evaluationSystem": "WBV", "isWagyuSpecific": true }
+  ],
+  "breedAverages": {
+    "BWT": 2.1, "W200": 12, "W400": 22, "W600": 28, "MCW": 18, "Milk": 4,
+    "SC": 0.3, "CWT": 14, "EMA": 1.8, "MS": 0.55, "MFI": 0.30, "P8Fat": 1.2, "NFI": 0.0
+  },
+  "percentileRanges": {
+    "BWT":   { "p10": 4.2,   "p25": 3.0,   "p50": 2.1,   "p75": 1.0,   "p90": -0.2 },
+    "W200":  { "p10": 4,     "p25": 8,     "p50": 12,    "p75": 17,    "p90": 22 },
+    "W400":  { "p10": 8,     "p25": 15,    "p50": 22,    "p75": 30,    "p90": 38 },
+    "W600":  { "p10": 10,    "p25": 19,    "p50": 28,    "p75": 37,    "p90": 46 },
+    "MCW":   { "p10": 42,    "p25": 30,    "p50": 18,    "p75": 6,     "p90": -5 },
+    "Milk":  { "p10": 0,     "p25": 2,     "p50": 4,     "p75": 7,     "p90": 10 },
+    "SC":    { "p10": -0.4,  "p25": -0.1,  "p50": 0.3,   "p75": 0.7,   "p90": 1.1 },
+    "CWT":   { "p10": 2,     "p25": 8,     "p50": 14,    "p75": 20,    "p90": 28 },
+    "EMA":   { "p10": -0.5,  "p25": 0.6,   "p50": 1.8,   "p75": 3.0,   "p90": 4.2 },
+    "MS":    { "p10": 0.10,  "p25": 0.32,  "p50": 0.55,  "p75": 0.82,  "p90": 1.15 },
+    "MFI":   { "p10": 0.00,  "p25": 0.15,  "p50": 0.30,  "p75": 0.48,  "p90": 0.68 },
+    "P8Fat": { "p10": 3.2,   "p25": 2.2,   "p50": 1.2,   "p75": 0.4,   "p90": -0.3 },
+    "NFI":   { "p10": 0.25,  "p25": 0.12,  "p50": 0.00,  "p75": -0.12, "p90": -0.25 }
+  },
+  "indexes": [
+    { "key": "SRI", "label": "Self-Replacing Index",     "description": "Net profitability/cow for self-replacing Wagyu herds.", "unit": "AUD" },
+    { "key": "FTI", "label": "Fullblood Terminal Index", "description": "For herds where all progeny go to harvest (no replacements retained).", "unit": "AUD" },
+    { "key": "F1I", "label": "F1 Terminal Index",        "description": "For producing F1 slaughter progeny on non-Wagyu dams.", "unit": "AUD" },
+    { "key": "BFI", "label": "Breeder-Feeder Index",     "description": "Added Feb 2024. Balances breeder cost of production with feeder returns.", "unit": "AUD" }
+  ],
+  "prefecturalTraits": [
+    { "key": "pct_tajima",    "label": "% Tajima",    "description": "Hyogo prefecture lineage — most prized for extreme marbling (Kobe beef origin)." },
+    { "key": "pct_kedaka",    "label": "% Kedaka",    "description": "Tottori prefecture lineage — strong growth." },
+    { "key": "pct_shimane",   "label": "% Shimane",   "description": "Shimane prefecture lineage." },
+    { "key": "pct_itozakura", "label": "% Itozakura", "description": "Shimane variant lineage." },
+    { "key": "pct_tottori",   "label": "% Tottori",   "description": "Tottori prefecture lineage." },
+    { "key": "pct_okayama",   "label": "% Okayama",   "description": "Okayama prefecture lineage." },
+    { "key": "pct_hiroshima", "label": "% Hiroshima", "description": "Hiroshima prefecture lineage." }
+  ]
+}

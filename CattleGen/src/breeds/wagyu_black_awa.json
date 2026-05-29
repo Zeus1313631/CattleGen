@@ -1,0 +1,46 @@
+{
+  "id": "wagyu_black_awa",
+  "name": "Japanese Black Wagyu (American)",
+  "association": "American Wagyu Association",
+  "evaluationSystem": "EPD",
+  "wagyuSubtype": "wagyu_black_fullblood_awa",
+  "prefecturalTracking": false,
+  "geneticConditions": ["F11", "IARS", "B3", "CHS", "CL16", "F13"],
+  "dataSourceUrl": "https://wagyu.org/for-members/genetic-evaluations",
+  "notes": "AWA publishes EPDs for Fullblood, Purebred, and percentage Wagyu (F1-F3). EPDs are on the USDA marbling scale.",
+  "traits": [
+    { "key": "CED",  "label": "Calving Ease Direct",  "unit": "%",     "higherIsBetter": true,  "category": "calving",    "description": "Expected % unassisted births from the sire to first-calf heifers, expressed as a difference from breed average.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "BW",   "label": "Birth Weight",         "unit": "lbs",   "higherIsBetter": false, "category": "calving",    "description": "Expected progeny difference in birth weight. Lower values favored for heifer bulls.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "WW",   "label": "Weaning Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight difference at ~205 days of age.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "YW",   "label": "Yearling Weight",      "unit": "lbs",   "higherIsBetter": true,  "category": "growth",     "description": "Progeny weight difference at ~365 days of age.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Milk", "label": "Maternal Milk",        "unit": "lbs",   "higherIsBetter": true,  "category": "maternal",   "description": "Weaning weight contribution from the daughter's milk production.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "TM",   "label": "Total Maternal",       "unit": "lbs",   "higherIsBetter": true,  "category": "maternal",   "description": "(WW / 2) + Milk — combined growth and milk of daughters.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "CW",   "label": "Carcass Weight",       "unit": "lbs",   "higherIsBetter": true,  "category": "carcass",    "description": "Progeny hot carcass weight difference at harvest.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Marb", "label": "Marbling (USDA)",      "unit": "score", "higherIsBetter": true,  "category": "carcass",    "description": "USDA marbling score difference — the defining Wagyu trait.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "RE",   "label": "Ribeye Area",          "unit": "sq in", "higherIsBetter": true,  "category": "carcass",    "description": "Ribeye area at the 12th rib.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "Fat",  "label": "Fat Thickness",        "unit": "in",    "higherIsBetter": false, "category": "carcass",    "description": "12th rib backfat. Lower values favored — excess fat is trimmed.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "IMF",  "label": "Intramuscular Fat %",  "unit": "%",     "higherIsBetter": true,  "category": "carcass",    "description": "Ultrasound-measured intramuscular fat percentage — correlates to marbling.", "evaluationSystem": "EPD", "isWagyuSpecific": true },
+    { "key": "YG",   "label": "Yield Grade",          "unit": "score", "higherIsBetter": false, "category": "carcass",    "description": "USDA yield grade. Lower = higher cutability.", "evaluationSystem": "EPD", "isWagyuSpecific": true }
+  ],
+  "breedAverages": {
+    "CED": 6, "BW": 3.2, "WW": 28, "YW": 48, "Milk": 10, "TM": 24,
+    "CW": 35, "Marb": 0.45, "RE": 0.15, "Fat": 0.02, "IMF": 1.8, "YG": 0.05
+  },
+  "percentileRanges": {
+    "CED":  { "p10": 2,     "p25": 4,     "p50": 6,    "p75": 9,    "p90": 12 },
+    "BW":   { "p10": 5.5,   "p25": 4.2,   "p50": 3.2,  "p75": 1.8,  "p90": 0.5 },
+    "WW":   { "p10": 14,    "p25": 21,    "p50": 28,   "p75": 36,   "p90": 44 },
+    "YW":   { "p10": 24,    "p25": 36,    "p50": 48,   "p75": 62,   "p90": 76 },
+    "Milk": { "p10": 3,     "p25": 7,     "p50": 10,   "p75": 14,   "p90": 18 },
+    "TM":   { "p10": 11,    "p25": 18,    "p50": 24,   "p75": 31,   "p90": 38 },
+    "CW":   { "p10": 10,    "p25": 22,    "p50": 35,   "p75": 50,   "p90": 65 },
+    "Marb": { "p10": 0.10,  "p25": 0.28,  "p50": 0.45, "p75": 0.68, "p90": 0.95 },
+    "RE":   { "p10": -0.10, "p25": 0.05,  "p50": 0.15, "p75": 0.28, "p90": 0.42 },
+    "Fat":  { "p10": 0.06,  "p25": 0.04,  "p50": 0.02, "p75": 0.00, "p90": -0.01 },
+    "IMF":  { "p10": 0.6,   "p25": 1.2,   "p50": 1.8,  "p75": 2.6,  "p90": 3.5 },
+    "YG":   { "p10": 0.18,  "p25": 0.12,  "p50": 0.05, "p75": -0.03,"p90": -0.10 }
+  },
+  "indexes": [
+    { "key": "$Grid", "label": "Grid Value", "description": "Expected carcass grid premium based on marbling, ribeye, and yield grade.", "unit": "USD" }
+  ]
+}
